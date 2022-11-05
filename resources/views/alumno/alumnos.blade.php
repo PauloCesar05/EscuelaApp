@@ -2,7 +2,7 @@
 
 @section('contenido')
     <h1 class="text-center">Listado de alumnos</h1>
-
+    <a href="{{ url('/alumno/registrar') }}" class="btn btn-secondary">Registrar Alumno</a><br><br>
     <table class="table table-hover">
         <thead>
             <th>ID</th>
@@ -37,4 +37,5 @@
     <div class="text-center">
         {{$alumnos->links()}}
     </div>
+
 @stop
